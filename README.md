@@ -35,4 +35,4 @@ Similar to when running via `dotnet`, you can run `rateanime help` to get additi
 
 ## License
 
-This application is licensed under the [MIT License](rateanime/LICENSE).
+This application is licensed under the [MIT License](LICENSE).
