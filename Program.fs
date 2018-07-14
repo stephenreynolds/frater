@@ -80,5 +80,5 @@ let main argv =
         | _ -> promptRatings()
     | _ -> promptRatings()
 
-    Console.ReadLine |> ignore
+    Console.ReadLine() |> ignore
     0
