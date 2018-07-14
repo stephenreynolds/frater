@@ -32,3 +32,7 @@ If you are on Windows 10 x64, you can run `dotnet publish -c Release -r win10-x6
 For information on how to create an executable for your specific OS and architecture, see https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21.
 
 Similar to when running via `dotnet`, you can run `rateanime help` to get additional information.
+
+## License
+
+This application is licensed under the [MIT License](rateanime/LICENSE).
