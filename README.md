@@ -3,6 +3,7 @@
 I wrote this to help me rate anime better. It's in F#, because I felt like doing it that way.
 
 ## How Rating Works
+
 Anime are rated in five categories: Art, Sound, Character, Plot, and Enjoyment.
 
 Each category is weighted according the following percentages:
@@ -21,7 +22,7 @@ After each category is rated they are weighted, added together, scaled to 1 to 1
 
 ## Running
 
-To run this, first of all make sure you have .NET Core installed. Then, you can run by calling `dotnet run`.
+To run this, first of all make sure you have .NET Core installed (at least version 2.1.3). Then, you can run by calling `dotnet run`.
 
 Running `dotnet run help` will output some information regarding how rating works.
 
