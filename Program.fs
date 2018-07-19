@@ -55,8 +55,13 @@ let rec getRating name =
     | x when x >= 1.0 && x <= 5.0 -> score
     | _ -> printfn "Rating must be 1.0 to 5.0!"; getRating name
 
+// Helper function for prompting whether to run again.
+let runAgain () =
+    printf "\n\nRate another? (y/n): "
+    Console.ReadLine() = "y"
+
 // Helper function for rating
-let promptRatings () =
+let rec promptRatings () =
     printfn "Rate the following categories on a scale of 1.0 to 5.0:\n"
 
     let art = getRating "Art"
@@ -71,8 +76,14 @@ let promptRatings () =
 
     printf "\nAggregate Score: %.1f" finalScore
 
+    // Prompt to run again or not.
+    match runAgain() with
+    | true -> printfn ""; promptRatings()
+    | false -> 0 |> ignore
+
 [<EntryPoint>]
 let main argv =
+    // Prompt for ratings or print info if "help" arg given.
     match argv.Length with
     | length when length > 0 ->
         match argv.[0] with
@@ -80,5 +91,6 @@ let main argv =
         | _ -> promptRatings()
     | _ -> promptRatings()
 
+    printf "\nPress enter to exit."
     Console.ReadLine() |> ignore
     0
