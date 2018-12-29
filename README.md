@@ -6,7 +6,7 @@ I wrote this to help me rate anime better. It's in F#, because I felt like doing
 
 Anime are rated in five categories: Art, Sound, Character, Plot, and Enjoyment.
 
-Each category is weighted according the following percentages:
+Each category is weighted according to the following percentages:
 
 - Art: 11%
 - Sound: 11%
