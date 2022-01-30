@@ -34,8 +34,8 @@ let floorToHalf score = Math.Floor(score * 2.0) / 2.0
 
 // Helper function for printing info about this program
 let printInfo () =
-    printfn "This program was written to help with rating anime."
-    printfn "\nAnime are rated in five categories: Art, Sound, Character, Plot, and Enjoyment."
+    printfn "This program was written to help with rating media."
+    printfn "\nMedia are rated in five categories: Art, Sound, Character, Plot, and Enjoyment."
     printfn "Each category is weighted according the following percentages:"
     printfn "\tArt: 11%%"
     printfn "\tSound: 11%%"
@@ -90,7 +90,4 @@ let main argv =
         | "help" -> printInfo()
         | _ -> promptRatings()
     | _ -> promptRatings()
-
-    printf "\nPress enter to exit."
-    Console.ReadLine() |> ignore
     0
