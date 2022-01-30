@@ -1,10 +1,10 @@
-# rateanime
+# FRater
 
-I wrote this to help me rate anime better. It's in F#, because I felt like doing it that way.
+I wrote this to help me rate media such as shows and games better. It's in F#, because I felt like doing it that way.
 
 ## How Rating Works
 
-Anime are rated in five categories: Art, Sound, Character, Plot, and Enjoyment.
+Media is rated in five categories: Art, Sound, Character, Plot, and Enjoyment.
 
 Each category is weighted according to the following percentages:
 
@@ -28,11 +28,11 @@ Running `dotnet run help` will output some information regarding how rating work
 
 ## Compiling to Executable
 
-If you are on Windows 10 x64, you can run `dotnet publish -c Release -r win10-x64` to create a .exe (which should be in bin/Release/../../rateanime.exe).
+If you are on Windows 10 x64, you can run `dotnet publish -c Release -r win10-x64` to create a .exe (which should be in bin/Release/../../frater.exe).
 
 For information on how to create an executable for your specific OS and architecture, see https://docs.microsoft.com/en-us/dotnet/core/tools/dotnet-publish?tabs=netcore21.
 
-Similar to when running via `dotnet`, you can run `rateanime help` to get additional information.
+Similar to when running via `dotnet`, you can run `frater help` to get additional information.
 
 ## License
 
